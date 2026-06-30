@@ -1,0 +1,141 @@
+.projects {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.projects-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  max-width: 680px;
+  color: var(--text-hi);
+  margin-bottom: 3.5rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  border-radius: 20px;
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--border-strong);
+}
+
+.project-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.project-tag.accent { color: var(--accent); }
+.project-tag.coral { color: var(--coral); }
+.project-tag { text-transform: uppercase; }
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-mid);
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.icon-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-hi);
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 1.8rem;
+}
+
+.project-label {
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.6rem;
+}
+
+.project-text {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-low);
+}
+
+.project-decisions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.project-decisions li {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-low);
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.project-decisions li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+.stack-chip {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-low);
+}
+
+@media (max-width: 900px) {
+  .project-body { grid-template-columns: 1fr; gap: 1.2rem; }
+}
