@@ -6,23 +6,41 @@ import './Projects.css';
 const projects = [
   {
     tag: 'Case Study 01',
+    title: 'Last-Mile Delivery Route Optimizer',
+    problem:
+      'Last-mile delivery is the most expensive part of logistics — drivers take inefficient routes, customers get no visibility, and dispatchers manage everything manually with no automation.',
+    decisions: [
+      'Multi-vehicle VRP solver using Google OR-Tools distributing 15 stops across 3 vehicles with capacity and time-window constraints',
+      'XGBoost ETA model trained on 8,000 delivery records achieving 0.95 min MAE, accounting for peak-hour traffic and area patterns',
+      'OSRM routing API draws actual road paths on a Leaflet.js map with real distance and travel time per segment',
+      'n8n automation pipeline sends WhatsApp/email alerts to customers when their driver is 2 stops away — zero manual intervention',
+    ],
+    outcome:
+      'A fully deployed, production-grade delivery system with real-time routing, ML-powered ETAs, and automated customer notifications.',
+    stack: ['Python', 'FastAPI', 'OR-Tools', 'XGBoost', 'Leaflet.js', 'n8n', 'OSRM', 'Render'],
+    demo: 'https://delivery-application-stzb.onrender.com/',
+    code: 'https://github.com/firestorm9823/delivery-application',
+    accent: 'coral',
+  },
+  {
+    tag: 'Case Study 02',
     title: 'SmartDoc Analyzer',
     problem:
-      'People drown in long PDFs and don\u2019t want to read them end to end \u2014 they want to ask a question and get a grounded answer with a source they can verify.',
+      'People drown in long PDFs and don\'t want to read them end to end — they want to ask a question and get a grounded answer with a source they can verify.',
     decisions: [
       'Drag-and-drop upload as the only first action — zero forms, zero friction before value',
       'Chat-style interface so answers feel conversational, not like a search results page',
       'Every AI answer ships with a visible source citation, so trust is built into the layout, not bolted on',
     ],
     outcome:
-      'A response interface that treats explainability as a UI requirement, not an afterthought.',
-    stack: ['React', 'Vite', 'FastAPI', 'LangChain', 'FAISS'],
+      'A RAG-powered document assistant that treats explainability as a core requirement, not an afterthought.',
+    stack: ['React', 'FastAPI', 'LangChain', 'FAISS', 'Groq API', 'Llama 3.1'],
     demo: 'https://smartdoc-frontend-xi.vercel.app/',
     code: 'https://github.com/firestorm9823',
     accent: 'accent',
   },
   {
-    tag: 'Case Study 02',
+    tag: 'Case Study 03',
     title: 'Movie Recommendation System',
     problem:
       'Recommendation engines are often a black box — users see results with no sense of why, which kills trust in the suggestion.',
@@ -36,10 +54,10 @@ const projects = [
     stack: ['Python', 'Streamlit', 'Scikit-Learn', 'TMDB API'],
     demo: null,
     code: 'https://github.com/firestorm9823/Movie_recommender',
-    accent: 'coral',
+    accent: 'accent',
   },
   {
-    tag: 'Case Study 03',
+    tag: 'Case Study 04',
     title: 'The Wall of Dreams — Web Presence',
     problem:
       'An early-stage company needed a homepage and service pages that felt credible and consistent across every device, on a tight timeline.',
@@ -53,7 +71,7 @@ const projects = [
     stack: ['React.js', 'Tailwind CSS'],
     demo: null,
     code: null,
-    accent: 'accent',
+    accent: 'coral',
   },
 ];
 
@@ -77,7 +95,7 @@ export default function Projects() {
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.7 }}
       >
-        Three interfaces, three problems worth solving.
+        Four projects, four real problems solved.
       </motion.h2>
 
       <div className="project-list">

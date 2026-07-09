@@ -4,19 +4,19 @@ import './Skills.css';
 const groups = [
   {
     label: 'Interface',
-    items: ['React.js', 'Tailwind CSS', 'HTML / CSS', 'Responsive Design', 'Component Systems'],
+    items: ['React.js', 'Tailwind CSS', 'HTML / CSS', 'Leaflet.js', 'Responsive Design'],
   },
   {
     label: 'Engineering',
-    items: ['Python', 'C / C++', 'SQL', 'FastAPI', 'REST APIs'],
+    items: ['Python', 'SQL', 'FastAPI', 'REST APIs', 'LangChain', 'Groq API'],
   },
   {
-    label: 'Applied ML',
-    items: ['Scikit-Learn', 'LangChain', 'FAISS', 'Feature Engineering', 'Model Evaluation'],
+    label: 'Applied ML & AI',
+    items: ['Scikit-Learn', 'XGBoost', 'OR-Tools', 'FAISS', 'LLMs', 'GenAI', 'Feature Engineering'],
   },
   {
-    label: 'Workflow',
-    items: ['Git / GitHub', 'Vercel', 'Render', 'Jupyter Notebook', 'VS Code'],
+    label: 'Automation & DevOps',
+    items: ['n8n', 'OSRM', 'Pandas', 'NumPy', 'Git / GitHub', 'Vercel', 'Render', 'Streamlit'],
   },
 ];
 
